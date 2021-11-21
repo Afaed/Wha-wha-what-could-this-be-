@@ -25,7 +25,7 @@ window.prompt("Which capital letter do you want")
         ;else {window.prompt("Please pick a acceptable letter");
         return capitalcase
     }
-
+passwordText.value = password;
 }
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
