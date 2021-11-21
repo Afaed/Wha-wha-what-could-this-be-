@@ -8,13 +8,13 @@ var password = "";
 // Get references to the #generate element
 var generateBtn = document.getElementById("generate");
 
-function generatePassword() {
-    window.prompt("what lowercase letter do you want");
-    if (response = lowercase || response === "ok");
-        else { window.alert("unacceptable");
-    return lowresponse;}
-    console.log("lowerresponse");}
-    
+function generatePassword() { 
+    var lowerresponse = window.prompt("what lowercase letter do you want");
+    if (lowerresponse = lowercase || response === null);
+        window.alert("unacceptable");
+    return lowercaseresponse;
+}
+
 
 // Write password to the #password input
 function writePassword() {
