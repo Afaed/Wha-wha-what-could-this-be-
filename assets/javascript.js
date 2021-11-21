@@ -6,25 +6,21 @@ var uppercase = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M"
 var passwordLength = 8;
 var password = "";
 // Get references to the #generate element
-var generateBtn = document.getElementById("#generate");
+var generateBtn = document.getElementById("generate");
+
+function generatePassword() {
+    window.prompt("what lowercase letter do you want");
+    if (response = lowercase || response === "ok");
+        else { window.alert("unacceptable");
+    return lowresponse;}
+    console.log("lowerresponse");}
+    
 
 // Write password to the #password input
 function writePassword() {
  var password=generatePassword();
- var passwordText=document.querySelector("#password");
+ var passwordText=document.querySelector("password");
 
- window.prompt("what lowercase letter do you want") 
-    if (response = lowercase || response === "ok");
-        else { window.alert("unacceptable");
-    return lowresponse;}
-    console.log("lowerresponse")
-
-
-window.prompt("Which capital letter do you want")
-    if (window.prompt = capitalcase || Response === "ok")
-        ;else {window.prompt("Please pick a acceptable letter");
-        return capitalcase
-    }
 passwordText.value = password;
 }
 // Add event listener to generate button
