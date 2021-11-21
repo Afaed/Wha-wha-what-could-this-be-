@@ -11,8 +11,11 @@ var generateBtn = document.getElementById("generate");
 function generatePassword() { 
     var lowerresponse = window.prompt("what lowercase letter do you want");
     if (lowerresponse = lowercase || response === null);
-        window.alert("unacceptable");
+       else window.alert("unacceptable");
     return lowercaseresponse;
+    
+    var uppercaseresponse = window.prompt("what uppercase letter do you want?")
+     
 }
 
 
