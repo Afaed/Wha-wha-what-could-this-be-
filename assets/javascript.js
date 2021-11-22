@@ -9,38 +9,41 @@ var password = "";
 var generateBtn = document.getElementById("generate");
 
 function generatePassword() { 
-let length = prompt("Length of password")
-while (length < 8 || length > 128);
-  length = prompt("Try again")
+let length= prompt ("Length of password")
+while (length < 8 && length > 128){
+  length = prompt("Try again");}
 
-let useLowerCase = prompt("Use lowercase")
-while (lowercase !== "no"|| lowercase !== "yes")
-  useLowerCase = prompt("Try again");
+let useLowercase =prompt("Use lowercase")
+while (useLowercase !== "no" && useLowercase !== "yes"){
+  useLowercase = prompt("Try again")};
 
-let useupperCase = prompt("Use Uppercase")
-    while (uppercase !== "no" || uppercase !=="yes") {
-    useUpperCase = prompt("Try again")};
+let useUppercase = prompt("Use Uppercase")
+    while (useUppercase !== "no" && useUppercase !=="yes") {
+    useUppercase = prompt("Try again")};
 
 let useSymbol = prompt ("Use symbol?")
-while (symbol !== "no" || symbol !== "yes") {
+while (useSymbol !== "no" && useSymbol !== "yes") {
 useSymbol = prompt("try again")};
 
 let usableCharacters = [];
 
 if (useLowercase === "yes") {
-    usableCharacters += lowercaseCharacters;
-  }
+    usableCharacters += lowercase;
+  };
 if (useUppercase === "yes") {
     usableCharacters += uppercase;
-  }
+  };
 if (useSymbol === "yes") {
-    usableCharacters += uppercase;}
-}
+        usableCharacters += symbol;};
+        Math.random 
+};
+ 
+
 
 // Write password to the #password input
 function writePassword() {
  var password=generatePassword();
- var passwordText=document.querySelector("password");
+ var passwordText=document.querySelector("#password");
 
 passwordText.value = password;
 }
