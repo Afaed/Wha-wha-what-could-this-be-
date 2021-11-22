@@ -35,8 +35,12 @@ if (useUppercase === "yes") {
   };
 if (useSymbol === "yes") {
         usableCharacters += symbol;};
-        Math.random 
-};
+
+for (var i = 0; i <= length; i++) {var randomnumber=Math.floor(Math.random() * length);
+    password += usableCharacters.substring(randomnumber,randomnumber +1);
+}
+
+}
  
 
 
