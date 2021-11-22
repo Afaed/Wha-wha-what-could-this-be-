@@ -3,7 +3,7 @@ var lowercase = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m"
 var numbers = [ "0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
 var symbol = ["!", "@", "#","$", "%","^","&", "*", "(", ")", "[","]",];
 var uppercase = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z",];
-var password = "";
+
 
 // Get references to the #generate element
 var generateBtn = document.getElementById("generate");
@@ -32,20 +32,23 @@ useSymbol = prompt("try again")};
 let usableCharacters = [];
 
 if (useLowercase === "yes") {
-    usableCharacters += lowercase;
+    usableCharacters.push(...lowercase);
   };
 if (useUppercase === "yes") {
-    usableCharacters += uppercase;
+    usableCharacters.push(...uppercase);
   };
 if (useSymbol === "yes") {
-        usableCharacters += symbol;};
-if (useNumber === "yes") {
-    usableCharacters += numbers;
-}
+        usableCharacters.push(...symbol);
+    };
 
-for (var i = 0; i <= length; i++) {var randomnumber=Math.floor(Math.random() * length);
-    password += usableCharacters.substring(randomnumber,randomnumber +1);
+if (useNumber === "yes") {
+    usableCharacters.push(...numbers);
 }
+var password = ""
+for (var i = 1; i <= length; i++) {var randomnumber=Math.floor(Math.random() * usableCharacters.length);
+    password += usableCharacters [randomnumber];
+}
+return password
 
 }
  
