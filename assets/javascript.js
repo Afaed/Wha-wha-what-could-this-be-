@@ -5,18 +5,24 @@ var symbol = ["!", "@", "#","$", "%","^","&", "*", "(", ")", "[","]",];
 var uppercase = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z",];
 var passwordLength = 8;
 var password = "";
+
 // Get references to the #generate element
 var generateBtn = document.getElementById("generate");
 
 function generatePassword() { 
-    var lowerresponse = window.prompt("what lowercase letter do you want");
-    if (lowerresponse = lowercase || response === null);
-       else window.alert("unacceptable");
-    return lowercaseresponse;
-    
+    var lowerresponse =  window.prompt("what lowercase letter do you want")
+    if (lowerresponse = "" || lowerresponse === null){
+        window.alert("Please input a value")
+        return lowerresponse};
+
     var uppercaseresponse = window.prompt("what uppercase letter do you want?")
-     
-}
+        if (uppercaseresponse = "" || uppercaseresponse === null);
+           window.alert ("unnaceptable") 
+    
+    var symbolresponse = window.prompt("what uppercase letter do you want?")
+    if (symbolresponse = "" || symbolresponse === null);{
+       window.alert ("unnaceptable") 
+       return uppercaseresponse};
 
 
 // Write password to the #password input
