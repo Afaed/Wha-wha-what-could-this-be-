@@ -25,6 +25,10 @@ let useSymbol = prompt ("Use symbol?")
 while (useSymbol !== "no" && useSymbol !== "yes") {
 useSymbol = prompt("try again")};
 
+let useNumber= prompt ("Use numbers?")
+while (useNumber !== "no" && useNumber !== "yes") {
+useSymbol = prompt("try again")};
+
 let usableCharacters = [];
 
 if (useLowercase === "yes") {
@@ -35,6 +39,9 @@ if (useUppercase === "yes") {
   };
 if (useSymbol === "yes") {
         usableCharacters += symbol;};
+if (useNumber === "yes") {
+    usableCharacters += numbers;
+}
 
 for (var i = 0; i <= length; i++) {var randomnumber=Math.floor(Math.random() * length);
     password += usableCharacters.substring(randomnumber,randomnumber +1);
